@@ -1,0 +1,15 @@
+# local Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# local pipeline data
+data/
+spark-warehouse/
+
+# secrets and local config
+.env
+.databrickscfg
+
+# macOS
+.DS_Store
