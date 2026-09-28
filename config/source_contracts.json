@@ -1,0 +1,79 @@
+{
+  "dpwh": {
+    "required_fields": [
+      "amountPaid",
+      "budget",
+      "category",
+      "completionDate",
+      "contractId",
+      "contractor",
+      "description",
+      "infraYear",
+      "latitude",
+      "location",
+      "longitude",
+      "programName",
+      "progress",
+      "sourceOfFunds",
+      "startDate",
+      "status"
+    ],
+    "required_location_fields": ["province", "region"]
+  },
+  "flood": {
+    "required_fields": [
+      "ABC",
+      "CompletionDateActual",
+      "ContractCost",
+      "ContractID",
+      "Contractor",
+      "DistrictEngineeringOffice",
+      "InfraYear",
+      "Latitude",
+      "Longitude",
+      "Municipality",
+      "ProjectComponentID",
+      "ProjectDescription",
+      "ProjectID",
+      "Province",
+      "Region",
+      "StartDate",
+      "TypeofWork",
+      "infra_type"
+    ]
+  },
+  "psgc": {
+    "release": "2Q 2026 as of 2026-06-30",
+    "required": {
+      "psgc_code": ["10-digit PSGC", "10 digit PSGC", "PSGC Code", "Code"],
+      "name": ["Name", "Name of LGU", "Geographic Name"],
+      "geographic_level": ["Geographic Level", "Geo Level", "Level"]
+    },
+    "optional": {
+      "correspondence_code": ["Correspondence Code"],
+      "old_name": ["Old Name", "Previous Name"],
+      "city_classification": ["City Class", "City Classification"],
+      "income_classification": ["Income Classification"],
+      "urban_rural": ["Urban / Rural", "Urban/Rural", "Urban or Rural"],
+      "population_2024": ["2024 Population", "Population 2024"]
+    },
+    "scan_rows": 25
+  },
+  "population": {
+    "minimum_expected_rows": 40000,
+    "release_year": 2024
+  },
+  "boundaries": {
+    "match_levels": ["city", "municipality", "town"],
+    "maximum_broadcast_features": 5000
+  },
+  "projects": {
+    "flood_default_category": "Flood Control and Drainage",
+    "philippines_bounds": {
+      "minimum_latitude": 4.0,
+      "maximum_latitude": 22.0,
+      "minimum_longitude": 116.0,
+      "maximum_longitude": 127.0
+    }
+  }
+}
